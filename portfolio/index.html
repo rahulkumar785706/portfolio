@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="./js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/typed.js-master/typed.min.js"></script>
+</head>
+<body>
+    
+    <header>
+     <nav>
+        <div class="logo"> PORTFO<span>LIO</span></div>
+        <div class="menu">
+            <a href="#" class="" id="">Home</a>
+            <a href="#" class="" id="">About</a>
+            <a href="#" class="" id="">Skills</a>
+            <a href="#" class="" id="">Service</a>
+            <a href="#" class="" id="">Contact</a>
+        </div>
+     </nav>
+     <div class="text">
+        <p>Hello, I am</p>
+        <h1>Rahul Roy</h1>
+        <p>And I am a <span id="ani" style="color:#e74c3c;">Front End Developer</span></p>
+        <button class="c-btn"> Hire me</button>
+     </div>     
+    </header>
+
+    <section id="about">
+        <div class="section-info">
+            <h1>About</h1>
+            <p> Who i am? </p>
+        </div>
+        <div class="about-row">
+            <div class="about-left-col">
+                <img src="./photo/man.jpeg">
+            </div>
+            <div class="about-right-col">
+                <p id="p-title"> Hello,I'm Rahul Roy  & I'm a Web Developer.</p>
+                <p>Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live .Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live.Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live  </p>
+                <button class="c-btn">Download cv</button>
+            </div>
+        </div>
+     </section>
+     <section id="skills">
+        <div class="section-info">
+            <h1 style="color:white">Skill's</h1>
+            <p> Who i am? </p>
+        </div>
+        <div class="skills-row">
+            <div class="skill-left-col">
+                <p>Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live .Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live.Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live</p>
+                <button class="c-btn">Read more...</button>
+            </div>
+            <div class="skill-right-col">
+                <div class="progress-div">
+                    <p>
+                    <span>HTML</span><br>
+                    <progress value="90" max="100"></progress>
+                    <span>90%</span>
+                   </p>
+                   <p>
+                    <span>CSS</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                   </p>
+                   <p>
+                    <span>JAVASCRIPT</span><br>
+                    <progress value="70" max="100"></progress>
+                    <span>70%</span>
+                   </p>
+                   <p>
+                    <span>JQUERY</span><br>
+                    <progress value="65" max="100"></progress>
+                    <span>65%</span>
+                   </p>
+                   <p>
+                    <span>BOOTSTRAP</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                   </p>
+                   
+                </div>
+            </div>
+        </div>
+
+     </section>
+     <section id="service">
+        <div class="section-info">
+            <h1 >Service</h1>
+            <p> What we provide? </p>
+        </div>
+        <div class="services-row">
+            <div class="services-box">
+                <img src="./photo/thumb.jpeg">
+                <h2>Web Design</h2>
+                <p>Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live .Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live.</p>
+            </div>
+            <div class="services-box">
+                <img src="./photo/thumb.jpeg">
+                <h2>Web Development</h2>
+                <p>Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live .Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live.</p>
+            </div>
+            <div class="services-box">
+                <img src="./photo/thumb.jpeg">
+                <h2>Apps Development</h2>
+                <p>Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live .Astrilogy is the study of the influence that distant conmic object,usally start and plants,have on human live.</p>
+            </div>
+        </div>
+     </section>
+     <section id="contact">
+        <div class="section-info" style="color:white;">
+            <h1>Get in Touch</h1>
+            <p style="color: black;"> We are Avilable </p>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <img src="./photo/smallboy.jpeg">
+            </div>
+            <div class="contact-right-col">
+                <form>
+                    <h2>Connect with us..</h2>
+                    <input type="text" name=""placeholder="Name"><br>
+                    <input type="email" name="" placeholder="Email"><br>
+                    <textarea cols="40" rows="10" placeholder="message"></textarea><br>
+                    <button class="c-btn">Submit</button>
+
+                </form>
+            </div>
+        </div>
+     </section>
+     <section id="footer">
+        <h2>Developed by Rahul roy....</h2>
+        <img src="./photo/logo.jpeg" style="width: 100px;">
+        
+     </section>
+     <script src="./js/jquery.ripples-master/jquery.ripples-min.js"></script>
+     <script>
+        jQuery(document).ready(function(){
+            $('header').ripples({
+                        dropRadius: 20,
+                        perturbance: 0.03,
+                        });
+        });
+     </script>
+     <script>
+        let animated= new typed('#ani',{
+            String:["Front End Developer","Front End Designer","Blogger"],
+            typeSpeed: 100,
+            backSpeed:100,
+            loop:true,
+        });
+     </script>
+     
+</body>
+</html>
